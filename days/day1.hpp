@@ -1,0 +1,2 @@
+int countInc();
+int countSliding();

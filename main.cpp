@@ -1,10 +1,9 @@
 #include <iostream>
 
-#include "utils/file.hpp"
+#include "days/day1.hpp"
 
 int main() {
-    File f;
-    f.readFile("input/test.txt");
-    std::cout << f.getData();
+    std::cout << countInc() << std::endl;
+    std::cout << countSliding() << std::endl;
     return 0;
 }
