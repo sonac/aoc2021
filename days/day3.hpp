@@ -1,0 +1,2 @@
+int calcPower();
+int calcLifePower();

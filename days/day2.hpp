@@ -1,0 +1,2 @@
+int calcDistance();
+int calcAimedDistance();
