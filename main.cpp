@@ -3,6 +3,7 @@
 #include "days/day1.hpp"
 #include "days/day2.hpp"
 #include "days/day3.hpp"
+#include "days/day4.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -11,5 +12,6 @@ int main() {
     std::cout << calcAimedDistance() << std::endl;
     std::cout << calcPower() << std::endl;
     std::cout << calcLifePower() << std::endl;
+    std::cout << calcBingo() << std::endl;
     return 0;
 }
