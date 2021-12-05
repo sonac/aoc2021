@@ -13,5 +13,6 @@ int main() {
     std::cout << calcPower() << std::endl;
     std::cout << calcLifePower() << std::endl;
     std::cout << calcBingo() << std::endl;
+    std::cout << calcLooseBingo() << std::endl;
     return 0;
 }

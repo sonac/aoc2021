@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <sstream>
+#include <iostream>
 
 #include "day4.hpp"
 #include "../utils/file.hpp"
@@ -13,6 +14,8 @@ struct Line {
         std::string buf;
         std::stringstream ss(input);
         while (getline(ss, buf, ' ')) {
+            if (buf == " " || buf == "")
+                continue;
             uncrossed.push_back(std::stoi(buf));
         }
     }
@@ -60,9 +63,9 @@ struct Board {
     }
 
     bool announceNumber(int num) {
-        for (Line l: lines)
+        for (Line& l: lines)
             l.announceNumber(num);
-        for (Line l: verticies)
+        for (Line& l: verticies)
             l.announceNumber(num);
         return won();
     }
@@ -88,7 +91,7 @@ void parseNums(const std::string& input, std::vector<int>& nums) {
 
 void parseInput(std::vector<int>& nums, std::vector<Board>& boards) {
     File f;
-    f.readFile("../input/day4_1.txt");
+    f.readFile("input/day4_1.txt");
     std::string buf;
     std::stringstream ss(f.getData());
     std::vector<std::string> splitData;
@@ -98,25 +101,45 @@ void parseInput(std::vector<int>& nums, std::vector<Board>& boards) {
     for (int i = 0; i < splitData.size(); i++) {
         if (i == 0) {
             parseNums(splitData[i], nums);
+            continue;
         }
         if (i == 1)
             continue;
         if (i % 6 == 0) {
-            std::vector<std::string> v(splitData.begin() + (i - 4), splitData.begin() + i);
+            std::vector<std::string> v(splitData.begin() + (i - 4), 
+                    splitData.begin() + (i + 1));
             boards.emplace_back(v);
         }
     }
 }
-
 
 int calcBingo() {
     std::vector<int> nums;
     std::vector<Board> boards;
     parseInput(nums, boards);
     for (const int& n: nums) {
-        for (Board b: boards) {
+        for (Board& b: boards) {
             if (b.announceNumber(n)) {
                 return b.getBoardValue() * n;
+            }
+        }
+    }
+    return 0;
+}
+
+int calcLooseBingo() {
+    std::vector<int> nums;
+    std::vector<Board> boards;
+    parseInput(nums, boards);
+    for (const int& n: nums) {
+        for (int i = 0; i < boards.size(); i++) {
+            if (boards[i].announceNumber(n)) {
+                if (boards.size() == 1)
+                    return boards[i].getBoardValue() * n;
+                else {
+                    boards.erase(boards.begin() + i);
+                    i--;
+                }
             }
         }
     }

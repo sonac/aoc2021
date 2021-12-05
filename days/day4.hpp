@@ -6,5 +6,6 @@
 #define AOC2021_DAY4_HPP
 
 int calcBingo();
+int calcLooseBingo();
 
 #endif //AOC2021_DAY4_HPP
