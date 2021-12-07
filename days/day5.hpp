@@ -1,0 +1,2 @@
+int calcOverlappingLines();
+int calcOverlappingWithDiag();

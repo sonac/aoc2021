@@ -4,6 +4,9 @@
 #include "days/day2.hpp"
 #include "days/day3.hpp"
 #include "days/day4.hpp"
+#include "days/day5.hpp"
+#include "days/day6.hpp"
+#include "days/day7.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -14,5 +17,11 @@ int main() {
     std::cout << calcLifePower() << std::endl;
     std::cout << calcBingo() << std::endl;
     std::cout << calcLooseBingo() << std::endl;
+    std::cout << calcOverlappingLines() << std::endl;
+    std::cout << calcOverlappingWithDiag() << std::endl;
+    std::cout << countLampFish() << std::endl;
+    std::cout << countForeverLampFish() << std::endl;
+    std::cout << calcAlignFuel() << std::endl;
+    std::cout << calcAlignIncrFuel() << std::endl;
     return 0;
 }

@@ -1,0 +1,3 @@
+int calcAlignFuel();
+int calcAlignIncrFuel();
+
