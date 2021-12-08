@@ -7,6 +7,7 @@
 #include "days/day5.hpp"
 #include "days/day6.hpp"
 #include "days/day7.hpp"
+#include "days/day8.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -23,5 +24,7 @@ int main() {
     std::cout << countForeverLampFish() << std::endl;
     std::cout << calcAlignFuel() << std::endl;
     std::cout << calcAlignIncrFuel() << std::endl;
+    std::cout << countUniqueDigits() << std::endl;
+    std::cout << countAllDigits() << std::endl;
     return 0;
 }

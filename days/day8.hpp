@@ -1,0 +1,2 @@
+int countUniqueDigits();
+int countAllDigits();
