@@ -8,6 +8,7 @@
 #include "days/day6.hpp"
 #include "days/day7.hpp"
 #include "days/day8.hpp"
+#include "days/day9.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -26,5 +27,7 @@ int main() {
     std::cout << calcAlignIncrFuel() << std::endl;
     std::cout << countUniqueDigits() << std::endl;
     std::cout << countAllDigits() << std::endl;
+    std::cout << calcLowetPoints() << std::endl;
+    std::cout << calcBasins() << std::endl;
     return 0;
 }

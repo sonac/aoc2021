@@ -5,4 +5,4 @@ tasks:
     cmds:
       - g++ -o aoc main.cpp utils/file.cpp days/day1.cpp days/day2.cpp 
         days/day3.cpp days/day4.cpp days/day5.cpp days/day6.cpp 
-        days/day7.cpp days/day8.cpp -std=c++17
+        days/day7.cpp days/day8.cpp days/day9.cpp -std=c++17
