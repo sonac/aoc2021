@@ -9,6 +9,7 @@
 #include "days/day7.hpp"
 #include "days/day8.hpp"
 #include "days/day9.hpp"
+#include "days/day10.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -29,5 +30,7 @@ int main() {
     std::cout << countAllDigits() << std::endl;
     std::cout << calcLowetPoints() << std::endl;
     std::cout << calcBasins() << std::endl;
+    std::cout << calcIllegal() << std::endl;
+    std::cout << calcClosers() << std::endl;
     return 0;
 }
