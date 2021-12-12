@@ -1,0 +1,2 @@
+int calcFlashes();
+int calcAllFlashesStep();

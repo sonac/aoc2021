@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(aoc2021)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(days)
 include_directories(utils)
@@ -27,6 +27,8 @@ add_executable(aoc2021
         days/day9.hpp
         days/day10.cpp
         days/day10.hpp
+        days/day11.cpp
+        days/day11.hpp
         utils/file.cpp
         utils/file.hpp
         main.cpp days/day4.cpp days/day4.hpp)
