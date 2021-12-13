@@ -1,0 +1,2 @@
+int calcVisibleDots();
+void printCode();

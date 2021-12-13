@@ -11,6 +11,8 @@
 #include "days/day9.hpp"
 #include "days/day10.hpp"
 #include "days/day11.hpp"
+#include "days/day12.hpp"
+#include "days/day13.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -35,5 +37,9 @@ int main() {
     std::cout << calcClosers() << std::endl;
     std::cout << calcFlashes() << std::endl;
     std::cout << calcAllFlashesStep() << std::endl;
+    std::cout << calcPaths() << std::endl;
+    //std::cout << calcBiggerPaths() << std::endl; TODO uncomment, it too slow to include in debug
+    std::cout << calcVisibleDots() << std::endl;
+    printCode();
     return 0;
 }

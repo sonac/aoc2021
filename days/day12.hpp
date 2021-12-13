@@ -1,0 +1,2 @@
+int calcPaths();
+int calcBiggerPaths();
