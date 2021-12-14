@@ -13,6 +13,7 @@
 #include "days/day11.hpp"
 #include "days/day12.hpp"
 #include "days/day13.hpp"
+#include "days/day14.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -41,5 +42,7 @@ int main() {
     //std::cout << calcBiggerPaths() << std::endl; TODO uncomment, it too slow to include in debug
     std::cout << calcVisibleDots() << std::endl;
     printCode();
+    std::cout << calcPolymer() << std::endl;
+    std::cout << calcBigPolymer() << std::endl;
     return 0;
 }
