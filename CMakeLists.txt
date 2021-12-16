@@ -37,6 +37,8 @@ add_executable(aoc2021
         days/day14.hpp
         days/day15.cpp
         days/day15.hpp
+        days/day16.cpp
+        days/day16.hpp
         utils/file.cpp
         utils/file.hpp
         main.cpp days/day4.cpp days/day4.hpp)

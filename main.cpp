@@ -15,6 +15,7 @@
 #include "days/day13.hpp"
 #include "days/day14.hpp"
 #include "days/day15.hpp"
+#include "days/day16.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -46,6 +47,8 @@ int main() {
     std::cout << calcPolymer() << std::endl;
     std::cout << calcBigPolymer() << std::endl;
     std::cout << calcShortestPath() << std::endl;
-    std::cout << calcFullMap() << std::endl;
+    //std::cout << calcFullMap() << std::endl; TODO uncoment, also kinda slow
+    std::cout << sumVersions() << std::endl;
+    std::cout << calcBits() << std::endl;
     return 0;
 }

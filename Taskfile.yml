@@ -7,4 +7,4 @@ tasks:
         days/day3.cpp days/day4.cpp days/day5.cpp days/day6.cpp 
         days/day7.cpp days/day8.cpp days/day9.cpp days/day10.cpp 
         days/day11.cpp days/day12.cpp days/day13.cpp days/day14.cpp 
-        days/day15.cpp -std=c++17
+        days/day15.cpp days/day16.cpp -std=c++17
