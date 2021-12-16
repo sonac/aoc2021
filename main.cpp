@@ -14,6 +14,7 @@
 #include "days/day12.hpp"
 #include "days/day13.hpp"
 #include "days/day14.hpp"
+#include "days/day15.hpp"
 
 int main() {
     std::cout << countInc() << std::endl;
@@ -44,5 +45,7 @@ int main() {
     printCode();
     std::cout << calcPolymer() << std::endl;
     std::cout << calcBigPolymer() << std::endl;
+    std::cout << calcShortestPath() << std::endl;
+    std::cout << calcFullMap() << std::endl;
     return 0;
 }

@@ -1,0 +1,2 @@
+int calcShortestPath();
+int calcFullMap();
